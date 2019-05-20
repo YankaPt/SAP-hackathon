@@ -3,13 +3,13 @@ package by.bsu.hachaton.services.user;
 import by.bsu.hachaton.DAO.CommonDAO;
 import by.bsu.hachaton.DTO.User;
 import by.bsu.hachaton.exceptions.NoUserWithSuchLoginException;
-import org.springframework.beans.factory.annotation.Autowired;
 
+import javax.annotation.Resource;
 import java.util.List;
 import java.util.Optional;
 
 public class UserServiceImpl implements UserService {
-    @Autowired
+    @Resource(name = "UserDao")
     private CommonDAO commonDAO;
 
     @Override
