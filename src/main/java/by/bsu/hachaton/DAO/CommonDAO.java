@@ -10,6 +10,6 @@ public interface CommonDAO<T> {
     List<T> getAll();
 
     void update(T model);
-
+  
     void create(T model);
 }
