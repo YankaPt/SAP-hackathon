@@ -1,5 +1,6 @@
 package by.bsu.hachaton.services.worker;
 
+import by.bsu.hachaton.DTO.Worker;
 import by.bsu.hachaton.exceptions.NoWorkerWithSuchLoginException;
 
 import java.util.List;
