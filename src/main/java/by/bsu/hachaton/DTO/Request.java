@@ -14,21 +14,25 @@ public class Request {
 
     private Double rank;
 
-    public Request(String photo, Double longitude, Double latitude, String description, Double rank) {
+    private String status;
+
+    public Request(String photo, Double longitude, Double latitude, String description, Double rank, String status) {
         this.photo = photo;
         this.longitude = longitude;
         this.latitude = latitude;
         this.description = description;
         this.rank = rank;
+        this.status = status;
     }
 
-    public Request(String id, String photo, Double longitude, Double latitude, String description, Double rank) {
+    public Request(String id, String photo, Double longitude, Double latitude, String description, Double rank, String status) {
         this.id = id;
         this.photo = photo;
         this.longitude = longitude;
         this.latitude = latitude;
         this.description = description;
         this.rank = rank;
+        this.status = status;
     }
 
     public String getId() {
@@ -77,5 +81,13 @@ public class Request {
 
     public void setRank(Double rank) {
         this.rank = rank;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }

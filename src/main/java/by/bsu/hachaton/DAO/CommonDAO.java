@@ -1,10 +1,11 @@
 package by.bsu.hachaton.DAO;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface CommonDAO<T> {
 
-    T getById(String id);
+    Optional<T> getById(String id);
 
     List<T> getAll();
 
