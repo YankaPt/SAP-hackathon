@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SAP" />
+        <module name="by.bsu.hachaton" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="by.bsu.hachaton" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
