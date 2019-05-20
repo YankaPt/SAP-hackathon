@@ -1,0 +1,21 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+#map {
+    width: 100%;
+    height: 90%;
+}
+
+.margin-top-10{
+    margin-top: 10%;
+}
+
+#pit-report-modal-footer{
+}
+
+#pit-request-modal-body{
+    margin-bottom:10px;
+}
