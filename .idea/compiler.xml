@@ -9,5 +9,8 @@
         <module name="by.bsu.hachaton" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="by.bsu.hachaton" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
