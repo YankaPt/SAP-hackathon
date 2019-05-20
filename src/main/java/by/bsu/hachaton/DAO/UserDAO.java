@@ -46,24 +46,4 @@ public class UserDAO implements CommonDAO<User> {
         int[] types = {Types.VARCHAR, Types.VARCHAR, Types.VARCHAR};
         jdbcTemplate.update("INSERT INTO \"user\" (login, password, role) VALUES (?, ?, ?)", params, types);
     }
-
-    @Override
-    public Optional getById(String id) {
-        return Optional.empty();
-    }
-
-    @Override
-    public List getAll() {
-        return null;
-    }
-
-    @Override
-    public void update(Object model) {
-
-    }
-
-    @Override
-    public void create(Object model) {
-
-    }
 }

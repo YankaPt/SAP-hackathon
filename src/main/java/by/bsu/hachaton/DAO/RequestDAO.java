@@ -1,8 +1,6 @@
 package by.bsu.hachaton.DAO;
 
 import by.bsu.hachaton.DTO.Request;
-import by.bsu.hachaton.DTO.User;
-import by.bsu.hachaton.DTO.Worker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
