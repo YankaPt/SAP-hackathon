@@ -20,7 +20,7 @@ import java.util.List;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = { "by.epam.travelagency.controller" }, excludeFilters = { @ComponentScan.Filter(type = FilterType.ANNOTATION, value = Configuration.class) })
+@ComponentScan(basePackages = { "by.bsu.hachaton.controller" }, excludeFilters = { @ComponentScan.Filter(type = FilterType.ANNOTATION, value = Configuration.class) })
 public class WebConfig implements WebMvcConfigurer {
 
 
