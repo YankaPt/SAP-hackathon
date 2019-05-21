@@ -4,13 +4,14 @@ import by.bsu.hachaton.DTO.Request;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 import java.sql.Types;
 import java.util.List;
 import java.util.Optional;
 
-@Repository
+@Component
 public class RequestDAO implements CommonDAO<Request> {
 
     private final JdbcTemplate jdbcTemplate;

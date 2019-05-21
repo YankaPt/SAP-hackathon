@@ -1,6 +1,11 @@
 package by.bsu.hachaton.DTO;
 
-public class Worker extends User {
+import org.springframework.stereotype.Component;
+
+public class Worker extends User implements BasicEntity {
+
+    public Worker() {
+    }
 
     private String Status;
 

@@ -12,7 +12,7 @@ import java.sql.Types;
 import java.util.List;
 import java.util.Optional;
 
-@Repository
+@Component
 public class WorkerDAO implements CommonDAO<Worker> {
 
     private final JdbcTemplate jdbcTemplate;

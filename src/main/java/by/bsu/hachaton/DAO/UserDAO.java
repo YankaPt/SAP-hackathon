@@ -4,13 +4,14 @@ import by.bsu.hachaton.DTO.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 import java.sql.Types;
 import java.util.List;
 import java.util.Optional;
 
-@Repository
+@Component
 public class UserDAO implements CommonDAO<User> {
 
     private final JdbcTemplate jdbcTemplate;
@@ -28,7 +29,7 @@ public class UserDAO implements CommonDAO<User> {
 
     @Override
     public List<User> getAll() {
-        return jdbcTemplate.query("SELECT * FROM \"user\"",
+        return jdbcTemplate.query("SELECT * FROM user",
                 new BeanPropertyRowMapper<>(User.class));
     }
 

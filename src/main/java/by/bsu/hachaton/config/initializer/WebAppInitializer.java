@@ -3,8 +3,6 @@ package by.bsu.hachaton.config.initializer;
 import by.bsu.hachaton.config.AppConfig;
 import by.bsu.hachaton.config.SecurityConfig;
 import by.bsu.hachaton.config.WebConfig;
-import org.springframework.context.annotation.Import;
-import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 import javax.servlet.Filter;

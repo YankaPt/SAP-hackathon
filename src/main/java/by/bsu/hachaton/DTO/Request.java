@@ -1,6 +1,11 @@
 package by.bsu.hachaton.DTO;
 
-public class Request {
+import org.springframework.stereotype.Component;
+
+public class Request implements BasicEntity {
+
+    public Request() {
+    }
 
     private String id;
 

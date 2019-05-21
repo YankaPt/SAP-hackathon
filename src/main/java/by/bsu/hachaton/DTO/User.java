@@ -1,9 +1,14 @@
 package by.bsu.hachaton.DTO;
 
-public class User {
+import org.springframework.stereotype.Component;
+
+public class User implements BasicEntity {
     private String login;
     private String password;
     private String role;
+
+    public User() {
+    }
 
     public User(String login, String password, String role) {
         this.login = login;
